@@ -13,7 +13,9 @@ router.get('/gen', function (req, res, next) {
         method: 'POST',
         url: 'https://faceplusplus-faceplusplus.p.rapidapi.com/facepp/v3/detect',
         qs: {
-            image_url: 'https://bigironrealtystorage.blob.core.windows.net/prod/2017/02/AV0A3552_2311.jpg'
+            image_url: 'https://bigironrealtystorage.blob.core.windows.net/prod/2017/02/AV0A3552_2311.jpg',
+
+            return_attributes: 'gender'
         },
         headers: {
             'x-rapidapi-host': 'faceplusplus-faceplusplus.p.rapidapi.com',
@@ -31,5 +33,7 @@ router.get('/gen', function (req, res, next) {
     });
 
 });
+
+
 
 module.exports = router;
