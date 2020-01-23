@@ -1,0 +1,41 @@
+{
+    "request_id": "1579785114,581fcc8a-0b75-4457-9ffb-1741bca54f18",
+    "time_used": 1593,
+    "faces": [
+        {
+            "face_token": "f98c1dfb8f1adc53ea40c8fa8af28d8b",
+            "face_rectangle": {
+                "top": 635,
+                "left": 575,
+                "width": 637,
+                "height": 637
+            },
+            "attributes": {
+                "gender": {
+                    "value": "Male"
+                },
+                "age": {
+                    "value": 62
+                },
+                "emotion": {
+                    "anger": 0.003,
+                    "disgust": 0.003,
+                    "fear": 0.003,
+                    "happiness": 90.925,
+                    "neutral": 8.449,
+                    "sadness": 0.003,
+                    "surprise": 0.615
+                },
+                "ethnicity": {
+                    "value": "nigga"
+                },
+                "beauty": {
+                    "male_score": 57.301,
+                    "female_score": 65.124
+                }
+            }
+        }
+    ],
+    "image_id": "n/pe6gfMmClZNQrdehoxEg==",
+    "face_num": 1
+}

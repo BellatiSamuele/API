@@ -1,0 +1,15 @@
+body
+  div(style={color: 'black', background: '#00B7FF'})
+    h1 FACE DETECTION
+    img(src=url, height="450" weight="700")
+    p GENDER: #{body.faces[0].attributes.gender.value}
+    p AGE: #{body.faces[0].attributes.age.value}
+    h3 EMOTION:
+    ul
+        li ANGER : #{body.faces[0].attributes.emotion.anger}
+        li HAPPINESS : #{body.faces[0].attributes.emotion.happiness}
+        li FEAR : #{body.faces[0].attributes.emotion.fear}
+
+    p ETHNICITY: #{body.faces[0].attributes.ethnicity.value}
+    p BEAUTY: #{body.faces[0].attributes.beauty.male_score}
+                

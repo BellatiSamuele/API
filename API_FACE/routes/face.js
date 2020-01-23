@@ -13,10 +13,9 @@ router.get('/gen', function (req, res, next) {
         method: 'POST',
         url: 'https://faceplusplus-faceplusplus.p.rapidapi.com/facepp/v3/detect',
         qs: {
-            image_url: 'https://bigironrealtystorage.blob.core.windows.net/prod/2017/02/AV0A3552_2311.jpg',
+            image_url: 'https://www.moviestruckers.com/wp-content/uploads/2017/09/spike-lee.jpg',
 
-            return_attributes: 'gender',
-            return_attributes: 'age'
+            return_attributes: 'gender,age,glass,beauty,ethnicity,emotion',
         },
         headers: {
             'x-rapidapi-host': 'faceplusplus-faceplusplus.p.rapidapi.com',
@@ -28,13 +27,12 @@ router.get('/gen', function (req, res, next) {
 
     request(options, function (error, response, body) {
         if (error) throw new Error(error);
-
-        console.log(body);
-        res.send(body);
+        body = JSON.parse(body);
+        console.log(body.faces);
+        res.render('face', {body, url : options.qs.image_url});
+        //res.send(JSON.stringify(body));
     });
 
 });
-
-
 
 module.exports = router;
