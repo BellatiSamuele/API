@@ -15,7 +15,8 @@ router.get('/gen', function (req, res, next) {
         qs: {
             image_url: 'https://bigironrealtystorage.blob.core.windows.net/prod/2017/02/AV0A3552_2311.jpg',
 
-            return_attributes: 'gender'
+            return_attributes: 'gender',
+            return_attributes: 'age'
         },
         headers: {
             'x-rapidapi-host': 'faceplusplus-faceplusplus.p.rapidapi.com',
